@@ -18,7 +18,7 @@ class FormController extends Controller
             'Sex' => 'required',
             'Mobilephone' => 'required|numeric',
             'Telephone-Number' => 'required|numeric',
-            'Birthdate' => 'required|date_format:yyyy-mm-dd',
+            'Birthdate' => 'required|date_format:Y-m-d',
             'Address' => 'required|string|max:100',
             'Email' => 'required|email',
             'Website' => 'required|url',
