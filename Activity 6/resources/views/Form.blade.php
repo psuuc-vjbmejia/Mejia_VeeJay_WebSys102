@@ -4,8 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Information</title>
 </head>
+<style>
+  .container {
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    max-width: 250px;
+}
+</style>
 <body >
-    <div >
+    <div class="container">
         <h1 >Personal Information</h1>
         <hr>
 
@@ -129,10 +138,14 @@
                             <td class="text-red-500 text-sm" style="color: red;">{{ $message }}</td>
                         </tr>
                     @enderror
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Submit</button></td>
+                    </tr>
                 </tbody>
             </table>
             <div >
-                <button type="submit">Submit</button>
+                
             </div>
         </form>
     </div>
