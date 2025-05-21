@@ -1,6 +1,5 @@
 <?php
 
-// File: app/Http/Controllers/WeatherController.php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -12,7 +11,7 @@ class WeatherController extends Controller
 {
     public function getWeather(Request $request)
     {
-        $city = $request->query('city', 'London'); // Default to London as per requirement
+        $city = $request->query('city', 'London');
         $apiKey = env('WEATHER_API_KEY');
 
         if (!$apiKey) {
