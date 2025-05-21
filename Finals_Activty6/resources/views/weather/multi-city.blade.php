@@ -1,4 +1,3 @@
-<!-- File: resources/views/weather/multi-city.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +24,7 @@
             flex: 1;
             padding: 20px;
             text-align: center;
-            min-width: 0; /* Prevents overflow issues */
+            min-width: 0;
         }
         .city-name {
             color: #569cd6;
