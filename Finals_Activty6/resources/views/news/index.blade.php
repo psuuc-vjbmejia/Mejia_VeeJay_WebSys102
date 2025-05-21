@@ -29,7 +29,7 @@
         }
         .column {
             flex: 1;
-            min-width: 0; /* Prevents overflow */
+            min-width: 0;
         }
         .article {
             margin-bottom: 20px;
@@ -73,7 +73,7 @@
             <div class="columns">
                 <div class="column">
                     @foreach($articles as $index => $article)
-                        @if ($index % 2 == 0) <!-- Even-indexed articles in left column -->
+                        @if ($index % 2 == 0)
                             <div class="article">
                                 <div class="article-title">
                                     <a href="{{ $article['url'] }}" target="_blank">{{ $article['title'] }}</a>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="column">
                     @foreach($articles as $index => $article)
-                        @if ($index % 2 == 1) <!-- Odd-indexed articles in right column -->
+                        @if ($index % 2 == 1)
                             <div class="article">
                                 <div class="article-title">
                                     <a href="{{ $article['url'] }}" target="_blank">{{ $article['title'] }}</a>
